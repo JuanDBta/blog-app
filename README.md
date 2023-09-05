@@ -112,11 +112,11 @@ Clone this repository to your desired folder:
 ```
 ### Run
 
-Go to your /school-library-project folder:
+Go to your /blog-app folder:
 
 ```sh
-  cd blog.app
-  ruby main.rb
+  cd blog-app
+  rails server
 ```
 
 ### Deployment
