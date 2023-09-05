@@ -78,7 +78,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Creating a data model.]**
+- **[Creating a data model]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -137,18 +137,18 @@ You can deploy this project using:<br>[Coming Soon!!!](https://github.com/JuanDB
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Creating a data model.]**
-- [ ] **[Validations and Model specs.]**
-- [ ] **[Processing data in models.]**
-- [ ] **[Setup and controllers.]**
-- [ ] **[Controllers specs.]**
-- [ ] **[Views.]**
-- [ ] **[Forms.]**
-- [ ] **[Integration specs for Views and fixing n+1 problems.]**
-- [ ] **[Add Devise.]**
-- [ ] **[Add authorization rules.]**
-- [ ] **[Add API endpoints.]**
-- [ ] **[API documentation.]**
+- [ ] **[Creating a data model]**
+- [ ] **[Validations and Model specs]**
+- [ ] **[Processing data in models]**
+- [ ] **[Setup and controllers]**
+- [ ] **[Controllers specs]**
+- [ ] **[Views]**
+- [ ] **[Forms]**
+- [ ] **[Integration specs for Views and fixing n+1 problems]**
+- [ ] **[Add Devise]**
+- [ ] **[Add authorization rules]**
+- [ ] **[Add API endpoints]**
+- [ ] **[API documentation]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
