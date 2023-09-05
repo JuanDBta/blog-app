@@ -4,7 +4,7 @@
  
   <h1><b>Blog App</b></h1>
  
-  <img src="" alt="logo" width="200"  height="auto">
+  <img src="blog_app_erd_v1_1.png" alt="logo" width="200"  height="auto">
   <br/>
 
 </div>
@@ -34,7 +34,7 @@
 
 # 📖 [BLOG APP] <a name="about-project"></a>
 
-**[SCHOOL LIBRARY]**  The Blog app is a classic example of a blog website. I created a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
+**[BLOG APP]**  The Blog app is a classic example of a blog website. I created a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
 
 ## 🛠 Built With <a name="built-with"></a>
 
