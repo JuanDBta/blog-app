@@ -176,7 +176,7 @@ I would like to thank Bee in Student Success who is always avalaible to solve is
 
 - **["How can I see more projects associated with this authors?"]**
 
-  - Check my [@JuanDBta](https://github.com/JuanDBta)
+  - Check my [Github Profile](https://github.com/JuanDBta)
 
 - **[How can I contact the author of this project?]**
 
