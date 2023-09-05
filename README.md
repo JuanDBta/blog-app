@@ -98,9 +98,18 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
+Windows Subsystem for Linux (WSL)<br>
 Web Browser (Chrome recommended)<br>
 Code editor (VS recommended)<br>
 GitHub account<br>
+
+> You need the following tools be installed in your computer:
+
+> - [WSL](https://gorails.com/setup/windows/11#linux-subsystem)
+> - [Git](https://www.linode.com/docs/guides/how-to-install-git-on-linux-mac-and-windows/)
+> - [Ruby](https://github.com/microverseinc/curriculum-ruby/blob/main/simple-ruby/articles/ruby_installation_instructions.md)
+> - [Rails](https://gorails.com/setup/windows/11#overview)
+
 
 ### Setup
 
