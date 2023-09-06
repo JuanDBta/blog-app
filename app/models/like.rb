@@ -2,10 +2,11 @@ class Like < ApplicationRecord
   belongs_to :author, class_name: 'User'
   belongs_to :post
 
-  private
-
   after_save :increment_likescounter
   before_destroy :decrement_likescounter
+
+  private
+  
   def increment_likescounter
     post.increment!(:likescounter)
   end

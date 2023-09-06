@@ -7,10 +7,11 @@ class Post < ApplicationRecord
     comments.order(created_at: :desc).limit(5)
   end
 
-  private
-
   after_save :increment_posts_counter
   before_destroy :decrement_posts_counter
+
+  private
+  
   def increment_posts_counter
     author.increment!(:posts_counter)
   end
