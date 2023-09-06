@@ -4,11 +4,11 @@ class Like < ApplicationRecord
 
     after_create :increment_likescounter
   before_destroy :decrement_likescounter
-  def increment_posts_counter
+  def increment_likescounter
     user.increment!(:likescounter)
   end
 
-  def decrement_posts_counter
+  def decrement_likescounter
     user.decrement!(:likescounter)
   end
 end
