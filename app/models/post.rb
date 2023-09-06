@@ -8,7 +8,7 @@ class Post < ApplicationRecord
   end
 
   private
-  
+
   after_save :increment_posts_counter
   before_destroy :decrement_posts_counter
   def increment_posts_counter
