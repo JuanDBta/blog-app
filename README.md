@@ -135,7 +135,6 @@ To run Rails console:
   rails c
 ```
 
-
 ### Deployment
 
 You can deploy this project using:<br>[Coming Soon!!!](https://github.com/JuanDBta/blog-app)
