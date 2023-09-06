@@ -146,7 +146,6 @@ You can deploy this project using:<br>[Coming Soon!!!](https://github.com/JuanDB
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Creating a data model]**
 - [ ] **[Validations and Model specs]**
 - [ ] **[Processing data in models]**
 - [ ] **[Setup and controllers]**

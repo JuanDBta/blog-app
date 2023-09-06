@@ -7,7 +7,6 @@ class CreatePosts < ActiveRecord::Migration[7.0]
       t.timestamps null: false, default: -> { 'CURRENT_TIMESTAMP' }
       t.integer :comments_counter
       t.integer :likes_counter
-      
     end
 
     add_index :posts, :author_id
