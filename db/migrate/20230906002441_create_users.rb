@@ -7,7 +7,5 @@ class CreateUsers < ActiveRecord::Migration[7.0]
       t.timestamps null: false, default: -> { 'CURRENT_TIMESTAMP' }
       t.integer :posts_counter
     end
-
-    add_index :users, :name
   end
 end
