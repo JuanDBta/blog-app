@@ -128,6 +128,13 @@ Go to your /blog-app folder:
   cd blog-app
   rails server
 ```
+To run Rails console:
+
+```sh
+  cd blog-app
+  rails c
+```
+
 
 ### Deployment
 
