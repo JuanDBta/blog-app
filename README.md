@@ -125,16 +125,11 @@ To run Rails console:
 
 ### Run tests
 
-Go to your /blog-app folder:
-
-```sh
-  cd blog-app
-  gem rspec-rails
-```
 To run tests:
 
 ```sh
   cd blog-app
+  bundle install
   rspec
 ```
 
