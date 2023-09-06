@@ -1,6 +1,6 @@
 class Like < ApplicationRecord
-    belongs_to :user
-    belongs_to :post
+  belongs_to :user
+  belongs_to :post
 
   after_create :increment_likescounter
   before_destroy :decrement_likescounter
