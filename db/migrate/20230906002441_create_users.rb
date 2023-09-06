@@ -4,8 +4,11 @@ class CreateUsers < ActiveRecord::Migration[7.0]
       t.string :name
       t.string :photo
       t.text :bio
-      t.timestamps default: -> { 'CURRENT_TIMESTAMP' }, null: false
+      t.timestamps null: false, default: -> { 'CURRENT_TIMESTAMP' }
       t.integer :post_counter
+      
     end
+
+    add_index :users, :name
   end
 end
