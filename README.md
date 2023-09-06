@@ -19,8 +19,6 @@
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
   - [Run tests](#run-tests)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
@@ -123,6 +121,21 @@ To run Rails console:
 ```sh
   cd blog-app
   rails c
+```
+
+### Run tests
+
+Go to your /blog-app folder:
+
+```sh
+  cd blog-app
+  gem rspec-rails
+```
+To run tests:
+
+```sh
+  cd blog-app
+  rspec
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
