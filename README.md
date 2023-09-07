@@ -16,14 +16,10 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -79,14 +75,7 @@
 ### Key Features <a name="key-features"></a>
 
 - **[Creating a data model]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Coming Soon...](https://github.com/JuanDBta/blog-app)
+- **[Processing data in models]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -127,10 +116,27 @@ Go to your /blog-app folder:
   cd blog-app
   rails server
 ```
+To run Rails console:
 
-### Deployment
+```sh
+  cd blog-app
+  rails c
+```
 
-You can deploy this project using:<br>[Coming Soon!!!](https://github.com/JuanDBta/blog-app)
+### Run tests
+
+Go to your /blog-app folder:
+
+```sh
+  cd blog-app
+  gem rspec-rails
+```
+To run tests:
+
+```sh
+  cd blog-app
+  rspec
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -147,7 +153,6 @@ You can deploy this project using:<br>[Coming Soon!!!](https://github.com/JuanDB
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[Validations and Model specs]**
-- [ ] **[Processing data in models]**
 - [ ] **[Setup and controllers]**
 - [ ] **[Controllers specs]**
 - [ ] **[Views]**
