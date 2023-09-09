@@ -76,6 +76,7 @@
 
 - **[Creating a data model]**
 - **[Processing data in models]**
+- **[Validations and Model specs]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -147,7 +148,6 @@ To run tests:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Validations and Model specs]**
 - [ ] **[Setup and controllers]**
 - [ ] **[Controllers specs]**
 - [ ] **[Views]**
