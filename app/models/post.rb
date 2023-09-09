@@ -3,6 +3,10 @@ class Post < ApplicationRecord
   has_many :comments
   has_many :likes
 
+  validates :title, presence: true, length: { maximum: 250 }
+  validates :commentscounter, numericality: { greater_than_or_equal_to: 0, only_integer: true }
+  validates :likescounter, numericality: { greater_than_or_equal_to: 0, only_integer: true }
+
   def recent_comments
     comments.order(created_at: :desc).limit(5)
   end
@@ -11,7 +15,7 @@ class Post < ApplicationRecord
   before_destroy :decrement_posts_counter
 
   private
-  
+
   def increment_posts_counter
     author.increment!(:posts_counter)
   end
