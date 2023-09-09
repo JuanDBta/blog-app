@@ -15,7 +15,7 @@ class Post < ApplicationRecord
   before_destroy :decrement_posts_counter
 
   private
-  
+
   def increment_posts_counter
     author.increment!(:posts_counter)
   end

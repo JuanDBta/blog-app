@@ -6,7 +6,7 @@ class Comment < ApplicationRecord
   before_destroy :decrement_commentscounter
 
   private
-  
+
   def increment_commentscounter
     post.increment!(:commentscounter)
   end

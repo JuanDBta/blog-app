@@ -22,19 +22,19 @@ RSpec.describe User, type: :model do
     it 'has many comments' do
       association = described_class.reflect_on_association(:comments)
       expect(association.macro).to eq(:has_many)
-      expect(association.options[:foreign_key]).to eq("user_id")
+      expect(association.options[:foreign_key]).to eq('user_id')
     end
 
     it 'has many posts' do
       association = described_class.reflect_on_association(:posts)
       expect(association.macro).to eq(:has_many)
-      expect(association.options[:foreign_key]).to eq("author_id")
+      expect(association.options[:foreign_key]).to eq('author_id')
     end
 
     it 'has many likes' do
       association = described_class.reflect_on_association(:likes)
       expect(association.macro).to eq(:has_many)
-      expect(association.options[:foreign_key]).to eq("user_id")
+      expect(association.options[:foreign_key]).to eq('user_id')
     end
   end
 end
