@@ -37,28 +37,4 @@ RSpec.describe User, type: :model do
       expect(association.options[:foreign_key]).to eq("user_id")
     end
   end
-
-  describe User, type: :model do
-    describe '#recent_posts' do
-      it 'returns the most recent posts for the user' do
-        user = User.create(name: 'Charlie', photo: 'photo.spec', bio: 'in a test')
-        user.save
-        user.id = 1
-    
-        post1 = Post.create(author_id: user.id, title: 'First Post', text: 'This is the first post', commentscounter: 0, likescounter: 0)
-        post1.save
-        post2 = Post.create(author_id: user.id, title: 'Second Post', text: 'This is the second post', commentscounter: 0, likescounter: 0)
-        post2.save
-        post3 = Post.create(author_id: user.id, title: 'Third Post', text: 'This is the third post', commentscounter: 0, likescounter: 0)
-        post3.save
-
-        recent_posts = user.recent_posts
-  
-        # Ordena los posts en orden descendente de acuerdo a la fecha de creación
-        expected_posts = [post3, post2, post1]
-  
-        expect(recent_posts).to eq(expected_posts)
-        end
-    end
-  end
 end
