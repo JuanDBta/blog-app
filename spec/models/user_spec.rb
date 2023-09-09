@@ -45,15 +45,18 @@ RSpec.describe User, type: :model do
         user.id = 1
         user.save
 
-        post1 = user.posts.build(author_id: 1, title: 'First Post', text: 'This is the first post', created_at: Time.now, updated_at: Time.now, commentscounter: 0, likescounter: 0)
+        post1 = user.posts.build(author_id: 1, title: 'First Post', text: 'This is the first post',
+                                 created_at: Time.now, updated_at: Time.now, commentscounter: 0, likescounter: 0)
         post1.id = 1
         post1.save
 
-        post2 = user.posts.build(author_id: 1, title: 'Second Post', text: 'This is the second post', created_at: Time.now, updated_at: Time.now, commentscounter: 0, likescounter: 0)
+        post2 = user.posts.build(author_id: 1, title: 'Second Post', text: 'This is the second post',
+                                 created_at: Time.now, updated_at: Time.now, commentscounter: 0, likescounter: 0)
         post2.id = 2
         post2.save
 
-        post3 = user.posts.build(author_id: 1, title: 'Third Post', text: 'This is the third post', created_at: Time.now, updated_at: Time.now, commentscounter: 0, likescounter: 0)
+        post3 = user.posts.build(author_id: 1, title: 'Third Post', text: 'This is the third post',
+                                 created_at: Time.now, updated_at: Time.now, commentscounter: 0, likescounter: 0)
         post3.id = 3
         post3.save
 
