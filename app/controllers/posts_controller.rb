@@ -1,9 +1,17 @@
 class PostsController < ApplicationController
+    before_action :set_user
     def index
-      # Implement logic for the all posts by a given user page here
+      @posts = @user.posts.includes(:comments)
     end
   
     def show
-      # Implement logic for the single post page here
+      @post = @user.posts.find(params[:id])
+      @comments = @post.comments
+    end
+  
+    private
+  
+    def set_user
+      @user = User.find(params[:user_id])
     end
   end
