@@ -1,0 +1,18 @@
+<h1>BLOGAPP PROJECT</h1>
+<h2>All Users</h2>
+
+<div class="users-page">
+  <ul class="users-list">
+    <% @users.each do |user| %>
+      <li class="user-info">
+        <div class="image">
+          <img src="<%= user.photo%>" alt="<%= user.name %>">
+        </div>
+        <div class="name">
+          <h3><%= user.name %></h3>
+          <p>Number of posts : <%= user.posts_counter %></p>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+</div>

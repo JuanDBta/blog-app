@@ -1,0 +1,44 @@
+<div class="user-page">
+  <div class="user-info">
+   <div class="image">
+     <img src="<%= user.photo%>" alt="<%= user.name %>">
+   </div>
+   <div class="name">
+     <h3><%= user.name %></h3>
+     <p>Number of posts : <%= user.posts_counter %></p>
+   </div>
+  </div>
+
+  <div class="user-posts">
+    <ul class="posts-list">
+      <% @user.posts.limit(3).each do |post| %>
+        <li class="post-with-comments">
+          <div class="post-container"
+            <h4><%= post.title %></h4>
+            <p><%= post.text %></p>
+            <div class="comments-counter">Comments :  <%= post.commentscounter %></div>
+            <div class="likes-counter">Likes : <%= post.likescounter %></div>
+          </div>
+
+          <div class="comments-container">
+            <% if post.comments.any? %>
+              <ul class="comments-list">
+                <% post.comments.each do |comment| %>
+                  <li class="comment">
+                    <p><strong><%= comment.user.name %>:</strong> <%= comment.text %></p>
+                  </li>
+                <% end %>
+              <% else %>
+                <p>No comments available</p>
+            <% end %>
+            <ul>
+          </div>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+
+  <div class="pagination-button">
+    <button id="pagination">Pagination</button>
+  </div>
+</div>

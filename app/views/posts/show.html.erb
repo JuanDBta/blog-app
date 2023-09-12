@@ -1,0 +1,23 @@
+<div class="post-container"
+  <div class="post-info"
+    <h4><%= post.title %> by <%= post.author %> </h4>
+    <div class="comments-counter">Comments :  <%= post.commentscounter %></div>
+    <div class="likes-counter">Likes : <%= post.likescounter %></div>
+  </div>
+    <p class="post-text"><%= post.text %></p>
+  </div>
+
+  <div class="comments-container">
+    <% if post.comments.any? %>
+      <ul class="comments-list">
+        <% post.comments.each do |comment| %>
+          <li class="comment">
+            <p><strong><%= comment.user.name %>:</strong> <%= comment.text %></p>
+          </li>
+        <% end %>
+    <% else %>
+      <p>No comments available</p>
+    <% end %>
+      <ul>
+  </div>
+</div>
