@@ -8,16 +8,16 @@
   </div>
 
   <div class="comments-container">
-            <% if post.comments.any? %>
-              <ul class="comments-list">
-                <% post.comments.each do |comment| %>
-                  <li class="comment">
-                    <p><strong><%= comment.user.name %>:</strong> <%= comment.text %></p>
-                  </li>
-                <% end %>
-              <% else %>
-                <p>No comments available</p>
-            <% end %>
-            <ul>
-          </div>
+    <% if post.comments.any? %>
+      <ul class="comments-list">
+        <% post.comments.each do |comment| %>
+          <li class="comment">
+            <p><strong><%= comment.user.name %>:</strong> <%= comment.text %></p>
+          </li>
+        <% end %>
+    <% else %>
+      <p>No comments available</p>
+    <% end %>
+      <ul>
+  </div>
 </div>
