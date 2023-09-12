@@ -17,7 +17,7 @@
   <div class="user-posts">
     <ul class="posts-list">
       <% @user.posts.limit(3).each do |post| %>
-        <li>
+        <li class="post-info>
           <h4><%= post.title %></h4>
           <p><%= post.text %></p>
           <div class="comments-counter">Comments :  <%= post.commentscounter %></div>
