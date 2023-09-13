@@ -1,11 +1,12 @@
+<h1>Display Posts by User</h1>
 <div class="user-page">
   <div class="user-info">
    <div class="image">
-     <img src="<%= user.photo%>" alt="<%= user.name %>">
+     <img src="<%= @user.photo%>" alt="<%= @user.name %>">
    </div>
    <div class="name">
-     <h3><%= user.name %></h3>
-     <p>Number of posts : <%= user.posts_counter %></p>
+     <h3><%= @user.name %></h3>
+     <p>Number of posts : <%= @user.posts_counter %></p>
    </div>
   </div>
 
@@ -17,7 +18,7 @@
   <div class="user-posts">
     <ul class="posts-list">
       <% @user.posts.limit(3).each do |post| %>
-        <li class="post-info>
+        <li class="post-info">
           <h4><%= post.title %></h4>
           <p><%= post.text %></p>
           <div class="comments-counter">Comments :  <%= post.commentscounter %></div>
@@ -31,5 +32,3 @@
     <button id="posts-button">See All Posts</button>
   </div>
 </div>
-
-   
