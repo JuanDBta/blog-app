@@ -1,46 +1,33 @@
 require 'rails_helper'
 
-RSpec.describe UsersController, type: :controller do
-  describe 'GET #index' do
-    it 'devuelve el status HTTP correcto' do
-      get :index
-      expect(response).to have_http_status(:ok)
+RSpec.describe User, type: :request do
+  describe '#index' do
+    it 'returns a successful response' do
+      get '/'
+      expect(response).to have_http_status(:success)
     end
-
-    it 'renderiza la plantilla index' do
-      get :index
+    it 'renders the correct template ' do
+      get '/'
       expect(response).to render_template(:index)
     end
-
-    it 'muestra los usuarios con datos correctos' do
-      user1 = User.create(name: 'John', photo: 'john.jpg', posts_counter: 0)
-      user2 = User.create(name: 'Jane', photo: 'jane.jpg', posts_counter: 1)
-
-      get :index
-
-      expect(assigns(:users)).to include(user1, user2)
+    it 'response body includes correct placeholder text ' do
+      get '/'
+      expect(response.body).to include('welcome to all users and thier respective number of posts')
     end
   end
-
-  describe 'GET #show' do
-    it 'devuelve el status HTTP correcto' do
-      user = User.create(name: 'John', photo: 'john.jpg', bio: 'User bio', posts_counter: 0)
-      get :show, params: { id: user.id }
-      expect(response).to have_http_status(:ok)
+  describe "'Get /show" do
+    let(:user) { User.create(name: 'Helen', photo: 'https://unsplash/', bio: 'Programmer', posts_counter: 0) }
+    it 'returns a successful response for specfic user' do
+      get "/users/#{user.id}"
+      expect(response).to have_http_status(:success)
     end
-
-    it 'renderiza la plantilla show' do
-      user = User.create(name: 'John', photo: 'john.jpg', bio: 'User bio', posts_counter: 0)
-      get :show, params: { id: user.id }
+    it 'renders the correct template for specfic user' do
+      get "/users/#{user.id}"
       expect(response).to render_template(:show)
     end
-
-    it 'muestra los detalles del usuario correctamente' do
-        user = User.create(name: 'John', photo: 'john.jpg', bio: 'User bio', posts_counter: 0)
-        user.save
-        get :show, params: { id: user.id }
-        expect(assigns(:user)).to eq(user)
-        expect(response.body).to include('')
-      end
+    it 'response body includes correct placeholder text for specfic user' do
+      get "/users/#{user.id}"
+      expect(response.body).to include('User Details')
+    end
   end
 end

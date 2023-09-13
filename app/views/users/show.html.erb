@@ -1,34 +1,29 @@
-<h1>Display Posts by User</h1>
-<div class="user-page">
-  <div class="user-info">
-   <div class="image">
-     <img src="<%= @user.photo%>" alt="<%= @user.name %>">
-   </div>
-   <div class="name">
-     <h3><%= @user.name %></h3>
+<h1>User Details</h1>
+<div>
+   <div class="user">
+     <h2><%= @user.name %></h2>
      <p>Number of posts : <%= @user.posts_counter %></p>
    </div>
-  </div>
-
-  <div class="user-bio">
+   <div class="user-bio">
       <h3>Bio</h3>
       <p><%= @user.bio %></p>
-  </div>
+   </div>
+   <ul>
+  <% @user.posts.each do |post| %>
+    <li>
+      <%= post.title %>
+    </li>
+    <li>
+      <%= post.text %>
+    </li>
+    <li>
+     Comments :  <%= post.commentscounter %>
+    </li>
+    <li>
+      Likes : <%= post.likescounter %>
+    </li>
 
-  <div class="user-posts">
-    <ul class="posts-list">
-      <% @user.posts.limit(3).each do |post| %>
-        <li class="post-info">
-          <h4><%= post.title %></h4>
-          <p><%= post.text %></p>
-          <div class="comments-counter">Comments :  <%= post.commentscounter %></div>
-          <div class="likes-counter">Likes : <%= post.likescounter %></div>
-        </li>
-      <% end %>
-    </ul>
-  </div>
+  <% end %>
+</ul>
 
-  <div class="all-posts-button">
-    <button id="posts-button">See All Posts</button>
-  </div>
 </div>
