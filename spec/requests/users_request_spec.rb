@@ -15,7 +15,7 @@ RSpec.describe User, type: :request do
       expect(response.body).to include('BLOG APP: DISPLAY ALL USERS')
     end
   end
-  describe "GET /show" do
+  describe 'GET /show' do
     let(:user) { User.create(name: 'Helen', photo: 'https://unsplash/', bio: 'Programmer', posts_counter: 0) }
     it 'returns a successful response for specfic user' do
       get "/users/#{user.id}"
