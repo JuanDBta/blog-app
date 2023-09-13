@@ -1,32 +1,36 @@
 require 'rails_helper'
 
 RSpec.describe Post, type: :request do
-  let(:user) { User.create(name: 'Meron Demeke', posts_counter: 0) }
-  let(:post) { user.posts.create(title: 'New post by meron') }
+  let(:user) { User.create(name: 'John', posts_counter: 5) }
+  let(:post) { Post.create(author: user, title: 'Post to be Destroyed', text: 'This post will be destroyed',
+  commentscounter: 0, likescounter: 0) }
   describe 'Get/#index' do
-    it 'returns a successful response for posts for specific user' do
+    it 'returns a successful response for posts for specfic user' do
       get "/users/#{user.id}/posts"
       expect(response).to have_http_status(:success)
     end
-    it 'renders the correct template for posts of specific user' do
+    it 'renders the correct template for  posts of specfic user' do
       get "/users/#{user.id}/posts"
       expect(response).to render_template(:index)
     end
-    it 'response body includes correct placeholder text for specific user' do
+    it 'response body includes correct placeholder text for specfic user' do
       get "/users/#{user.id}/posts"
       expect(response.body).to include('Posts & Comments')
     end
   end
-  describe 'Get/#show' do
-    it 'returns a successful response for posts for specific user' do
+  
+  describe 'GET /users/:user_id/posts/:id' do
+    it 'returns a successful response for a specific post of a specific user' do
       get "/users/#{user.id}/posts/#{post.id}"
       expect(response).to have_http_status(:success)
     end
-    it 'renders the correct template for specific post of specific user' do
+
+    it 'renders the correct template for a specific post of a specific user' do
       get "/users/#{user.id}/posts/#{post.id}"
       expect(response).to render_template(:show)
     end
-    it 'response body includes correct placeholder text for specific user' do
+
+    it 'response body includes correct placeholder text for a specific post of a specific user' do
       get "/users/#{user.id}/posts/#{post.id}"
       expect(response.body).to include('Whole Post')
     end
