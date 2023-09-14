@@ -19,7 +19,7 @@
     <ul>
       <% @user.posts.each do |post| %>
         <li class="post-info">
-          <h4>Post #<%= post.id %></h4>
+          <h4 class="post-id">Post #<%= post.id %></h4>
           <p class="post-text"><%= post.text %></p>
           <div class="stats">
             <div class="comments-counter">Comments: <%= post.commentscounter %></div>

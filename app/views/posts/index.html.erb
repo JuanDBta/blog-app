@@ -10,27 +10,29 @@
    </div>
   </div>
 
-  <div class="user-posts">
+  <div class="posts-container">
     <ul class="posts-list">
-      <% @user.posts.limit(3).each do |post| %>
+      <% @user.posts.each do |post| %>
         <li class="post-with-comments">
-          <div class="post-container"
-            <h4><%= post.title %></h4>
-            <p><%= post.text %></p>
-            <div class="comments-counter">Comments :  <%= post.commentscounter %></div>
-            <div class="likes-counter">Likes : <%= post.likescounter %></div>
+          <div class="post-info">
+            <h4 class="post-id">Post #<%= post.id %></h4>
+            <p class="post-text"><%= post.text %></p>
+            <div class="stats">
+              <div class="comments-counter">Comments: <%= post.commentscounter %></div>
+              <div class="likes-counter">Likes: <%= post.likescounter %></div>
+            </div>  
           </div>
 
           <div class="comments-container">
             <% if post.comments.any? %>
-              <ul class="comments-list">
+              <ul class="posts-list">
                 <% post.comments.each do |comment| %>
-                  <li class="comment">
-                    <p><strong><%= comment.user.name %>:</strong> <%= comment.text %></p>
+                  <li class="comment-info">
+                    <p class="comment-text"><strong><%= comment.user.name %>:</strong> <%= comment.text %></p>
                   </li>
                 <% end %>
               <% else %>
-                <p>No comments available</p>
+                <p class="comment-info available">No comments available</p>
             <% end %>
             <ul>
           </div>
@@ -39,7 +41,7 @@
     </ul>
   </div>
 
-  <div class="pagination-button">
-    <button id="pagination">Pagination</button>
+  <div class="pagination">
+    <button id="pagination-button">Pagination</button>
   </div>
 </div>

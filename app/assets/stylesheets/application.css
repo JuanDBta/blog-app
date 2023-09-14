@@ -156,9 +156,10 @@ ul {
   margin-top: 30px;
   background-color: rgb(116, 84, 116);
   margin-left: 230px;
+  cursor: pointer;
 }
 
-h4 {
+.post-id {
   margin-left: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 800;
@@ -208,3 +209,57 @@ h4 {
   border-radius: 5px;
   cursor: pointer;
 }
+
+.comment-info {
+    width: 1510px;
+    height: auto;
+    border: 3px silver solid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: rgb(116, 84, 116);
+    margin-left: 230px;
+    padding-left: 20px;
+  }
+  
+  .available {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: rgb(233, 213, 81);
+    font-size: 20px; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+
+  .comment-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    color: rgb(233, 213, 81);
+    font-size: 15px;
+    margin-left: 5px;
+  }
+
+  .pagination {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  #pagination-button {
+      width: 400px;
+      height: 80px;
+      background-color: rgb(233, 213, 81);
+      color: rgb(243, 236, 236);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 600;
+      font-size: 35px;
+      border: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
