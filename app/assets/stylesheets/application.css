@@ -294,3 +294,7 @@ ul {
     cursor: pointer;
     color: rgb(233, 213, 81);
   }
+
+  .posts-container-all {
+    display: none;
+  }
