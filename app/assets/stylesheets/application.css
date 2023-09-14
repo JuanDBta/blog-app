@@ -28,7 +28,7 @@ header {
 }
 
 h1 {
-    height: 40px;
+    height: 50px;
 }
 
 .user-page {
@@ -187,4 +187,24 @@ h4 {
     color: rgb(233, 213, 81);
     font-size: 20px;
     gap: 30px;
+}
+
+.all-posts-button {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#posts-button {
+    width: 400px;
+    height: 80px;
+    background-color: rgb(233, 213, 81);
+    color: rgb(243, 236, 236);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    border: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  cursor: pointer;
 }
