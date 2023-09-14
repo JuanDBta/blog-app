@@ -1,28 +1,30 @@
-<h2>Display Posts by User</h2>
 <div class="user-page">
+  <h2>Display Posts by User</h2>
   <div class="user-info">
    <div class="image">
      <img src="<%= @user.photo%>" alt="<%= @user.name %>">
    </div>
    <div class="name">
-     <h3><%= @user.name %></h3>
-     <p>Number of posts : <%= @user.posts_counter %></p>
+     <h3 class="username"><%= @user.name %></h3>
+     <p class="posts-counter">Number of posts : <%= @user.posts_counter %></p>
    </div>
   </div>
 
   <div class="user-bio">
-      <h3>Bio</h3>
-      <p><%= @user.bio %></p>
+      <h2>Bio</h2>
+      <p class="bio"><%= @user.bio %></p>
   </div>
-
-  <div class="user-posts">
-    <ul class="posts-list">
-      <% @user.posts.limit(3).each do |post| %>
-        <li class="post-info>
-          <h4><%= post.title %></h4>
-          <p><%= post.text %></p>
-          <div class="comments-counter">Comments :  <%= post.commentscounter %></div>
-          <div class="likes-counter">Likes : <%= post.likescounter %></div>
+  
+  <div class="posts-container">
+    <ul>
+      <% @user.posts.each do |post| %>
+        <li class="post-info">
+          <h4>Post #<%= post.id %></h4>
+          <p class="post-text"><%= post.text %></p>
+          <div class="stats">
+            <div class="comments-counter">Comments: <%= post.commentscounter %></div>
+            <div class="likes-counter">Likes: <%= post.likescounter %></div>
+          </div>
         </li>
       <% end %>
     </ul>
