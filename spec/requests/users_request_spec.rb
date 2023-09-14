@@ -12,7 +12,7 @@ RSpec.describe User, type: :request do
     end
     it 'response body includes correct placeholder text ' do
       get '/'
-      expect(response.body).to include('BLOG APP: DISPLAY ALL USERS')
+      expect(response.body).to include('BLOGAPP PROJECT')
     end
   end
   describe 'GET /show' do
