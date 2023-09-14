@@ -10,7 +10,14 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body id="blog-container">
+    <header>
+      <h1>BLOG APP PROJECT</h1>
+      <h3>Blog App powered by Ruby on Rails</h3>
+    </header>
+    
+    <div id="content"
+      <%= yield %>
+    </div>
   </body>
 </html>
