@@ -22,18 +22,101 @@ header {
     color: rgb(233, 213, 81);
     text-align: center;
     margin-top: 50px;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
 }
 
 h1 {
-    height: 20px;
+    height: 40px;
 }
 
 #content {
-    margin-top: 100px;
-    margin-left: 200px;
+    margin-top: 50px;
+    margin-left: 220px;
     text-align: center;
     width: 1600px;
     height: auto;
-    border: 1px silver solid;
+}
+
+.user-page {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin-top: 20px;
+    height: 40px;
+    text-align: center;
+    color: rgb(233, 213, 81);
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+}
+
+.users-list {
+    list-style: none;
+    padding: 0;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    margin: 20px;
+}
+
+.image {
+    width: 220px;
+    height: 220px;
+    border: 3px silver solid;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-top: 2.5px;
+    margin-left: 10px;
+    background-color: rgb(116, 84, 116);
+}
+
+.name {
+    width: 1290px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 3px silver solid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 15px;
+    background-color: rgb(116, 84, 116);
+}
+
+.username {
+    width: 600px;
+    height: 200px;
+    font-size: 70px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    color: rgb(233, 213, 81);
+}
+
+.posts-counter {
+    width: 600px;
+    height: 200px;
+    margin: 0;
+    font-size: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    margin-right: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    color: rgb(233, 213, 81);
 }
