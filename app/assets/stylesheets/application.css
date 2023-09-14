@@ -84,7 +84,6 @@ h2 {
     margin-top: 15px;
     margin-left: 15px;
     background-color: rgb(116, 84, 116);
-    cursor: pointer;
 }
 
 .username {
@@ -158,7 +157,6 @@ ul {
   margin-top: 30px;
   background-color: rgb(116, 84, 116);
   margin-left: 230px;
-  cursor: pointer;
 }
 
 .post-id {
@@ -289,4 +287,10 @@ ul {
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+  }
+
+  .links {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(233, 213, 81);
   }
