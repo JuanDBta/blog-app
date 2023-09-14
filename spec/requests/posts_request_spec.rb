@@ -34,7 +34,7 @@ RSpec.describe Post, type: :request do
 
     it 'response body includes correct placeholder text for a specific post of a specific user' do
       get "/users/#{user.id}/posts/#{post.id}"
-      expect(response.body).to include('Whole Post')
+      expect(response.body).to include('The Post')
     end
   end
 end

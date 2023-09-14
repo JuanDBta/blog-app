@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  layout 'application'
   before_action :set_user
   def index
     @posts = @user.posts.includes(:comments)
