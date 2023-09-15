@@ -19,7 +19,7 @@
     <ul>
       <% @user.recent_posts.each do |post| %>
         <li class="post-info">
-        <%= link_to user_post_path(@user, post), class: "post-link" do %>
+        <%= link_to user_posts_path(@user), class: "post-link" do %>
           <h4 class="post-id">Post #<%= post.id %></h4>
           <p class="post-text"><%= post.text %></p>
           <div class="stats">
@@ -36,7 +36,7 @@
     <ul>
       <% @user.posts.each do |post| %>
         <li class="post-info">
-        <%= link_to user_post_path(@user, post), class: "post-link" do %>
+        <%= link_to user_posts_path(@user), class: "post-link" do %>
           <h4 class="post-id">Post #<%= post.id %></h4>
           <p class="post-text"><%= post.text %></p>
           <div class="stats">

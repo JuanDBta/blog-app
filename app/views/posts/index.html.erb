@@ -14,6 +14,7 @@
     <ul class="posts-list">
       <% @user.posts.each do |post| %>
         <li class="post-with-comments">
+        <%= link_to user_post_path(@user, post), class: "post-link" do %>
           <div class="post-info">
             <h4 class="post-id">Post #<%= post.id %></h4>
             <p class="post-text"><%= post.text %></p>
@@ -22,6 +23,7 @@
               <div class="likes-counter">Likes: <%= post.likescounter %></div>
             </div>  
           </div>
+          <% end %>
 
           <div class="comments-container">
             <% if post.comments.any? %>
