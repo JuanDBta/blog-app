@@ -14,12 +14,12 @@
  *= require_self
  */
 body {
-    background-color: rgb(165, 139, 165);
+    background-color: rgb(165 139 165);
     margin: 0;
 }
 
 header {
-    color: rgb(233, 213, 81);
+    color: rgb(233 213 81);
     text-align: center;
     margin-top: 50px;
     font-weight: 800;
@@ -42,7 +42,7 @@ h2 {
     margin-top: 20px;
     height: 40px;
     text-align: center;
-    color: rgb(233, 213, 81);
+    color: rgb(233 213 81);
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 50px;
@@ -65,11 +65,11 @@ h2 {
     width: 220px;
     height: 220px;
     border: 3px silver solid;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
     border-radius: 5px;
     margin-top: 2.5px;
     margin-left: 10px;
-    background-color: rgb(116, 84, 116);
+    background-color: rgb(116 84 116);
 }
 
 .name {
@@ -79,11 +79,11 @@ h2 {
     flex-direction: row;
     justify-content: space-between;
     border: 3px silver solid;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
     border-radius: 5px;
     margin-top: 15px;
     margin-left: 15px;
-    background-color: rgb(116, 84, 116);
+    background-color: rgb(116 84 116);
 }
 
 .username {
@@ -96,7 +96,7 @@ h2 {
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 800;
-    color: rgb(233, 213, 81);
+    color: rgb(233 213 81);
 }
 
 .posts-counter {
@@ -110,19 +110,19 @@ h2 {
     margin-right: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
-    color: rgb(233, 213, 81);
+    color: rgb(233 213 81);
 }
 
 .bio {
   width: 1510px;
   height: auto;
   border: 3px silver solid;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
   border-radius: 5px;
-  background-color: rgb(116, 84, 116);
+  background-color: rgb(116 84 116);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 200;
-  color: rgb(233, 213, 81);
+  color: rgb(233 213 81);
   font-size: 20px;
   text-align: left;
   padding-left: 20px;
@@ -149,13 +149,13 @@ ul {
   width: 1530px;
   height: 220px;
   border: 3px silver solid;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
   border-radius: 5px;   
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-top: 30px;
-  background-color: rgb(116, 84, 116);
+  background-color: rgb(116 84 116);
   margin-left: 230px;
 }
 
@@ -163,7 +163,7 @@ ul {
   margin-left: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 800;
-  color: rgb(233, 213, 81);
+  color: rgb(233 213 81);
   font-size: 30px;
   height: 10px;
   margin-top: 5px;
@@ -172,7 +172,7 @@ ul {
 .post-text {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 200;
-    color: rgb(233, 213, 81);
+    color: rgb(233 213 81);
     font-size: 25px;
     margin-left: 20px;
 }
@@ -185,7 +185,7 @@ ul {
     padding-bottom: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
-    color: rgb(233, 213, 81);
+    color: rgb(233 213 81);
     font-size: 20px;
     gap: 30px;
 }
@@ -199,13 +199,13 @@ ul {
 #posts-button {
     width: 400px;
     height: 80px;
-    background-color: rgb(233, 213, 81);
-    color: rgb(243, 236, 236);
+    background-color: rgb(233 213 81);
+    color: rgb(243 236 236);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
     font-size: 35px;
     border: 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
   border-radius: 5px;
   cursor: pointer;
 }
@@ -214,13 +214,13 @@ ul {
     width: 1510px;
     height: auto;
     border: 3px silver solid;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
     border-radius: 5px;   
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 10px;
-    background-color: rgb(116, 84, 116);
+    background-color: rgb(116 84 116);
     margin-left: 230px;
     padding-left: 20px;
   }
@@ -228,7 +228,7 @@ ul {
   .available {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
-    color: rgb(233, 213, 81);
+    color: rgb(233 213 81);
     font-size: 20px; 
     padding-top: 20px;
     padding-bottom: 20px;
@@ -238,7 +238,7 @@ ul {
   .comment-text {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 200;
-    color: rgb(233, 213, 81);
+    color: rgb(233 213 81);
     font-size: 15px;
     margin-left: 5px;
   }
@@ -252,13 +252,13 @@ ul {
   #pagination-button {
       width: 400px;
       height: 80px;
-      background-color: rgb(233, 213, 81);
-      color: rgb(243, 236, 236);
+      background-color: rgb(233 213 81);
+      color: rgb(243 236 236);
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-weight: 600;
       font-size: 35px;
       border: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
     border-radius: 5px;
     cursor: pointer;
   }
@@ -267,10 +267,10 @@ ul {
     width: 1530px;
     height: auto;
     border: 3px silver solid;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
     border-radius: 5px;   
     margin-top: 30px;
-    background-color: rgb(116, 84, 116);
+    background-color: rgb(116 84 116);
     margin-left: 230px;
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -292,7 +292,7 @@ ul {
   .links {
     text-decoration: none;
     cursor: pointer;
-    color: rgb(233, 213, 81);
+    color: rgb(233 213 81);
   }
 
   .post-link {
