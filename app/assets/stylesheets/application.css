@@ -378,7 +378,10 @@ margin-top: 50px;
   margin-left: 100px;
   width: 1665px;
   margin-top: 30px;
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;  
 }
 
 .new-comment-button {
@@ -393,4 +396,15 @@ border-radius: 5px;
 cursor: pointer; 
 text-decoration: none;
 padding: 20px;
+}
+
+.like-button {
+  width: 70px;
+  height: 70px;
+  font-size: 70px;
+  margin-top: -25px;
+  border: 0;
+  background-color: rgb(165 139 165);
+  margin-right: 40px;
+  cursor: pointer;
 }

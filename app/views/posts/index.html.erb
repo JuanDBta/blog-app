@@ -44,6 +44,7 @@
           </div>
 
           <div class="comments-likes">
+            <%= button_to "💗", user_post_likes_path(@user, post_id: post.id), class: 'like-button' %>
             <%= link_to "Add Your Comment", new_user_post_comment_path(@user, post), class: 'new-comment-button' %>
           </div>
         </li>
