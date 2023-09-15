@@ -1,0 +1,10 @@
+<%= form_for(Comment.new) do |f| %>
+    <div class="field">
+      <%= f.label :content %>
+      <%= f.text_area :content %>
+    </div>
+    <div class="actions">
+      <%= f.submit "Create Comment" %>
+    </div>
+  <% end %>
+  
