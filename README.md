@@ -136,7 +136,7 @@ To run tests:
 ```sh
   cd blog-app
   bundle install
-  rspec
+  rspec spec
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
