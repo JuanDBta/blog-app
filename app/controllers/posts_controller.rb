@@ -10,9 +10,22 @@ class PostsController < ApplicationController
     @comments = @post.comments
   end
 
+  def create
+    @post = current_user.posts.build(post_params)
+    if @post.save
+      redirect_to @post, notice: "Post created successfully."
+    else
+      render "new"
+    end
+  end
+
   private
 
   def set_user
     @user = User.find(params[:user_id])
+  end
+
+  def post_params
+    params.require(:post).permit(:title, :content)
   end
 end
