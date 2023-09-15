@@ -305,8 +305,8 @@ ul {
 
   .new-post {
     text-align: right;
-    margin-right: 250px;
-    margin-top: -20px;
+    margin-right: 260px;
+    margin-top: 5px;
   }
 
   .new-post-button {
@@ -371,4 +371,26 @@ margin-top: 50px;
 
 .new-post-title {
   margin-top: 20px;
+}
+
+.comments-likes {
+  text-align: right;
+  margin-left: 100px;
+  width: 1665px;
+  margin-top: 30px;
+  
+}
+
+.new-comment-button {
+  background-color: rgb(233 213 81);
+  color: rgb(243 236 236);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  border: 0;
+box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+border-radius: 5px;
+cursor: pointer; 
+text-decoration: none;
+padding: 20px;
 }

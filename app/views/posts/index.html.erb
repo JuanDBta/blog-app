@@ -1,50 +1,55 @@
 <div class="user-page">
-<h2>Posts & Comments</h2>
+  <h2>Posts & Comments</h2>
   <div class="user-info">
-   <div class="image">
-     <img src="<%= @user.photo%>" alt="<%= @user.name %>">
-   </div>
-   <div class="name">
-     <h3 class="username"><%= @user.name %></h3>
-     <p class="posts-counter">Number of posts: <%= @user.posts_counter %></p>
-   </div>
+    <div class="image">
+      <img src="<%= @user.photo %>" alt="<%= @user.name %>">
+    </div>
+    <div class="name">
+      <h3 class="username"><%= @user.name %></h3>
+      <p class="posts-counter">Number of posts: <%= @user.posts_counter %></p>
+    </div>
+  </div>
+
+  <div class="new-post">
+    <%= link_to 'Add Your Post', new_user_post_path(@user), class: 'new-post-button' %>
   </div>
 
   <div class="posts-container">
     <ul class="posts-list">
       <% @user.posts.each do |post| %>
         <li class="post-with-comments">
-        <%= link_to user_post_path(@user, post), class: "post-link" do %>
-          <div class="post-info">
-            <h4 class="post-id">Post #<%= post.id %></h4>
-            <p class="post-text"><%= post.text %></p>
-            <div class="stats">
-              <div class="comments-counter">Comments: <%= post.commentscounter %></div>
-              <div class="likes-counter">Likes: <%= post.likescounter %></div>
-            </div>  
-          </div>
+          <%= link_to user_post_path(@user, post), class: "post-link" do %>
+            <div class="post-info">
+              <h4 class="post-id">Post #<%= post.id %></h4>
+              <p class="post-text"><%= post.text %></p>
+              <div class="stats">
+                <div class="comments-counter">Comments: <%= post.commentscounter %></div>
+                <div class="likes-counter">Likes: <%= post.likescounter %></div>
+              </div>
+            </div>
           <% end %>
 
-          <div id="comments-container">
+          <div class="comments-container">
             <% if post.comments.any? %>
-              <ul class="posts-list">
+              <ul class="comments-list">
                 <% post.comments.each do |comment| %>
                   <li class="comment-info">
                     <p class="comment-text"><strong><%= comment.user.name %>:</strong> <%= comment.text %></p>
                   </li>
                 <% end %>
-              <% else %>
-                <p class="comment-info available">No comments available</p>
+              </ul>
+            <% else %>
+              <p class="comment-info available">No comments available</p>
             <% end %>
-            <ul>
+          </div>
+
+          <div class="comments-likes">
+            <%= link_to "Add Your Comment", new_user_post_comment_path(@user, post), class: 'new-comment-button' %>
           </div>
         </li>
+        <hr>
       <% end %>
     </ul>
-  </div>
-
-  <div class="new-post">
-    <%= link_to 'Add Your Post', new_user_post_path(@user), class: 'new-post-button' %>
   </div>
 
   <div class="pagination">
