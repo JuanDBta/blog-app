@@ -295,6 +295,11 @@ ul {
     color: rgb(233, 213, 81);
   }
 
+  .post-link {
+    text-decoration: none;
+  }
+
+
   .posts-container-all {
     display: none;
   }
