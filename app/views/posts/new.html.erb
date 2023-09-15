@@ -1,14 +1,15 @@
-<%= form_with(model: @post, url: user_posts_path(@user), local: true) do |form| %>
-    <div class="field">
-      <%= form.label :title %>
-      <%= form.text_field :title %>
+<h1 class="form-title">Add a New Post</h1>
+<%= form_with model: @post, url: user_posts_path(@user.id), method: :post, local: true do |f| %>
+    <div class="new-post-title">
+      <%= f.label :title, class: 'label' %><br>
+      <%= f.text_field :title, class: 'title-input' %>
     </div>
-    <div class="field">
-      <%= form.label :content %>
-      <%= form.text_area :content %>
+  
+    <div class="post-text-form">
+      <%= f.label :text, class: 'label' %><br>
+      <%= f.text_field :text, class: 'text-input' %>
     </div>
-    <div class="actions">
-      <%= form.submit "Create Post" %>
-    </div>
+  
+    <%= f.submit "Add New Post", class: 'submit-button' %>
   <% end %>
   
