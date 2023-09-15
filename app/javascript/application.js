@@ -19,4 +19,42 @@ document.addEventListener("DOMContentLoaded", function() {
       showAllPosts();
     });
   });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    var button = document.getElementById("pagination-button");
+    var comments = document.querySelectorAll(".comment-info");
+  
+    // Variable para rastrear el estado de los comentarios
+    var commentsVisible = true;
+  
+    // Función para ocultar los comentarios
+    function hideComments() {
+      comments.forEach(function(comment) {
+        comment.classList.add("hidden");
+      });
+      commentsVisible = false;
+    }
+  
+    // Función para mostrar los comentarios
+    function showComments() {
+      comments.forEach(function(comment) {
+        comment.classList.remove("hidden");
+      });
+      commentsVisible = true;
+    }
+  
+    // Función para alternar la visibilidad de los comentarios
+    function toggleCommentsVisibility() {
+      if (commentsVisible) {
+        hideComments();
+      } else {
+        showComments();
+      }
+    }
+  
+    // Agrega un event listener al botón de paginación
+    button.addEventListener("click", function() {
+      toggleCommentsVisibility();
+    });
+  });
   

@@ -303,3 +303,7 @@ ul {
   .posts-container-all {
     display: none;
   }
+
+  .hidden {
+    display: none;
+  }
