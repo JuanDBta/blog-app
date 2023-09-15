@@ -1,10 +1,11 @@
-<%= form_for(Comment.new) do |f| %>
+<%= form_with(model: [@post, Comment.new], url: user_post_comments_path(@user, @post), local: true) do |form| %>
     <div class="field">
-      <%= f.label :content %>
-      <%= f.text_area :content %>
+      <%= form.label :content %>
+      <%= form.text_area :content %>
     </div>
     <div class="actions">
-      <%= f.submit "Create Comment" %>
+      <%= form.submit "Create Comment" %>
     </div>
   <% end %>
+  
   
