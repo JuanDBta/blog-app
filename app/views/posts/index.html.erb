@@ -1,36 +1,40 @@
-<h1>Posts & Comments</h1>
 <div class="user-page">
+<h2>Posts & Comments</h2>
   <div class="user-info">
    <div class="image">
      <img src="<%= @user.photo%>" alt="<%= @user.name %>">
    </div>
    <div class="name">
-     <h3><%= @user.name %></h3>
-     <p>Number of posts : <%= @user.posts_counter %></p>
+     <h3 class="username"><%= @user.name %></h3>
+     <p class="posts-counter">Number of posts: <%= @user.posts_counter %></p>
    </div>
   </div>
 
-  <div class="user-posts">
+  <div class="posts-container">
     <ul class="posts-list">
-      <% @user.posts.limit(3).each do |post| %>
+      <% @user.posts.each do |post| %>
         <li class="post-with-comments">
-          <div class="post-container"
-            <h4><%= post.title %></h4>
-            <p><%= post.text %></p>
-            <div class="comments-counter">Comments :  <%= post.commentscounter %></div>
-            <div class="likes-counter">Likes : <%= post.likescounter %></div>
+        <%= link_to user_post_path(@user, post), class: "post-link" do %>
+          <div class="post-info">
+            <h4 class="post-id">Post #<%= post.id %></h4>
+            <p class="post-text"><%= post.text %></p>
+            <div class="stats">
+              <div class="comments-counter">Comments: <%= post.commentscounter %></div>
+              <div class="likes-counter">Likes: <%= post.likescounter %></div>
+            </div>  
           </div>
+          <% end %>
 
-          <div class="comments-container">
+          <div id="comments-container">
             <% if post.comments.any? %>
-              <ul class="comments-list">
+              <ul class="posts-list">
                 <% post.comments.each do |comment| %>
-                  <li class="comment">
-                    <p><strong><%= comment.user.name %>:</strong> <%= comment.text %></p>
+                  <li class="comment-info">
+                    <p class="comment-text"><strong><%= comment.user.name %>:</strong> <%= comment.text %></p>
                   </li>
                 <% end %>
               <% else %>
-                <p>No comments available</p>
+                <p class="comment-info available">No comments available</p>
             <% end %>
             <ul>
           </div>
@@ -39,7 +43,7 @@
     </ul>
   </div>
 
-  <div class="pagination-button">
-    <button id="pagination">Pagination</button>
+  <div class="pagination">
+    <button id="pagination-button">Pagination</button>
   </div>
 </div>
