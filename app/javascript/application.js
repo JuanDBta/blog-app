@@ -3,31 +3,24 @@ import "@hotwired/turbo-rails"
 import "controllers"
 
 document.addEventListener("DOMContentLoaded", function() {
-    var button = document.getElementById("posts-button");
-  
-    // Función para mostrar todos los posts
-    function showAllPosts() {
-      var postsContainer = document.querySelector(".posts-container");
-      var postsContainerAll = document.querySelector(".posts-container-all");
-      postsContainer.style.display = "none";
-      postsContainerAll.style.display = "block";
-      button.style.display = "none"; // Oculta el botón después de mostrar todos los posts
-    }
-  
-    // Agrega un event listener al botón
-    button.addEventListener("click", function() {
-      showAllPosts();
-    });
+  var button = document.getElementById("posts-button");
+  var postsContainer = document.querySelector(".posts-container");
+  var postsContainerAll = document.querySelector(".posts-container-all");
+
+ 
+  button.addEventListener("click", function() {
+    postsContainer.style.display = "none";
+    postsContainerAll.style.display = "block";
+    button.style.display = "none";
   });
+});
 
   document.addEventListener("DOMContentLoaded", function() {
     var button = document.getElementById("pagination-button");
     var comments = document.querySelectorAll(".comment-info");
   
-    // Variable para rastrear el estado de los comentarios
     var commentsVisible = true;
   
-    // Función para ocultar los comentarios
     function hideComments() {
       comments.forEach(function(comment) {
         comment.classList.add("hidden");
@@ -35,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function() {
       commentsVisible = false;
     }
   
-    // Función para mostrar los comentarios
     function showComments() {
       comments.forEach(function(comment) {
         comment.classList.remove("hidden");
@@ -43,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function() {
       commentsVisible = true;
     }
   
-    // Función para alternar la visibilidad de los comentarios
     function toggleCommentsVisibility() {
       if (commentsVisible) {
         hideComments();
@@ -52,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
   
-    // Agrega un event listener al botón de paginación
     button.addEventListener("click", function() {
       toggleCommentsVisibility();
     });
