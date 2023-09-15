@@ -4,7 +4,7 @@
  
   <h1><b>Blog App</b></h1>
  
-  <img src="blog_app_erd_v1_1.png" alt="logo" width="200"  height="auto">
+  <img src="blog-app.png" alt="logo" width="300"  height="auto">
   <br/>
 
 </div>
