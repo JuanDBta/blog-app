@@ -1,0 +1,15 @@
+<h1 class="form-title">Add a New Post</h1>
+<%= form_with model: @post, url: user_posts_path(@user.id), method: :post, local: true do |f| %>
+    <div class="new-post-title">
+      <%= f.label :title, class: 'label' %><br>
+      <%= f.text_field :title, class: 'title-input' %>
+    </div>
+  
+    <div class="post-text-form">
+      <%= f.label :text, class: 'label' %><br>
+      <%= f.text_field :text, class: 'text-input' %>
+    </div>
+  
+    <%= f.submit "Add New Post", class: 'submit-button' %>
+  <% end %>
+  
