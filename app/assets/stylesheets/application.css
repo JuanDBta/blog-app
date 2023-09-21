@@ -410,3 +410,8 @@ padding: 20px;
   margin-right: 40px;
   cursor: pointer;
 }
+
+img {
+  width: 220px;
+  height: 220px;
+}
