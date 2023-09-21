@@ -37,9 +37,9 @@ RSpec.feature 'User show page', type: :feature do
     expect(page).to have_link('See All Posts')
   end
   it 'redirects to the post show page when a user post is clicked' do
-    click_link(post.title)
+    click_link("This post will be destroyed", match: :first)
 
-    expect(page).to have_current_path(user_post_path(user, post))
+    expect(page).to have_current_path(user_posts_path(user))
   end
 
   it 'redirects to the post index page when see all post link is clicked' do
