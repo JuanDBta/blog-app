@@ -122,6 +122,7 @@ Go to your /blog-app folder:
 
 ```sh
   cd blog-app
+  bundle install
   rails server
 ```
 To run Rails console:
