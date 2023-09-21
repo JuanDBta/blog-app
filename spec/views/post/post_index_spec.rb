@@ -40,13 +40,13 @@ RSpec.feature 'Post index page', type: :feature do
       end
     end
     it 'displays how many comments and likes a post has' do
-        post = Post.create(author: user, commentscounter: 1, likescounter: 0)
-        visit user_posts_path(user)
-        expect(page).to have_content("Comments: #{post.commentscounter}")
-        expect(page).to have_content("Likes: #{post.likescounter}")
+      post = Post.create(author: user, commentscounter: 1, likescounter: 0)
+      visit user_posts_path(user)
+      expect(page).to have_content("Comments: #{post.commentscounter}")
+      expect(page).to have_content("Likes: #{post.likescounter}")
     end
     it 'displays a section for pagination' do
-        expect(page).to have_button('Pagination')
+      expect(page).to have_button('Pagination')
     end
     it 'When I click on a post, it redirects me to that post show page.' do
       click_link(post.text)

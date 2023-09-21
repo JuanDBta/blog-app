@@ -13,13 +13,13 @@ RSpec.feature 'Post show page', type: :feature do
     User.create(name: 'lily', photo: 'l.jpg', bio: 'teacher from mexico', posts_counter: 0)
   end
   let!(:comment1) do
-    Comment.create(user: lily, post: post, text: 'First post!')
+    Comment.create(user: lily, post:, text: 'First post!')
   end
   let!(:comment2) do
-    Comment.create(user: lily, post: post, text: 'Second post!')
+    Comment.create(user: lily, post:, text: 'Second post!')
   end
   let!(:comment3) do
-    Comment.create(user: lily, post: post, text: 'Third post!')
+    Comment.create(user: lily, post:, text: 'Third post!')
   end
 
   before do
@@ -37,7 +37,7 @@ RSpec.feature 'Post show page', type: :feature do
     visit user_posts_path(user)
     expect(page).to have_content("Comments: #{post.commentscounter}")
     expect(page).to have_content("Likes: #{post.likescounter}")
-end
+  end
   it 'displays some of the post body' do
     expect(page).to have_selector('p', text: 'Hello')
   end
