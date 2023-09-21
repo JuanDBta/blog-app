@@ -7,15 +7,15 @@ RSpec.feature 'User show page', type: :feature do
     end
     let!(:post) do
       Post.create(author: user, title: 'Test1', text: 'First post',
-                commentscounter: 0, likescounter: 0)
+                  commentscounter: 0, likescounter: 0)
     end
     let!(:post2) do
       Post.create(author: user, title: 'Test2', text: 'Second post',
-                commentscounter: 0, likescounter: 0)
+                  commentscounter: 0, likescounter: 0)
     end
     let!(:post3) do
       Post.create(author: user, title: 'Test3', text: 'Third post',
-                commentscounter: 0, likescounter: 0)
+                  commentscounter: 0, likescounter: 0)
     end
 
     before do
@@ -26,7 +26,7 @@ RSpec.feature 'User show page', type: :feature do
     end
 
     it 'redirects to the post show page when a user post is clicked' do
-        click_link(post2.text, match: :first)
+      click_link(post2.text, match: :first)
 
       expect(page).to have_current_path(user_posts_path(user))
     end
