@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.feature 'User show page', type: :feature do
   include Rails.application.routes.url_helpers
-  let!(:user) { User.create(name: 'Juan', photo: 'juan.jpg', posts_counter: 4) }
+  let!(:user) { User.create(name: 'Juan', photo: 'juan.jpg', bio: 'teacher', posts_counter: 4) }
 
   let!(:post) do
     Post.create(author: user, title: 'Post1', text: 'This post will be destroyed',
