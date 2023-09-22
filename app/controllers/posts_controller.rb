@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  load_and_authorize_resource
   layout 'application'
   before_action :set_user
   def index
