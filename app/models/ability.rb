@@ -7,8 +7,9 @@ class Ability
       if user.role == "admin"
         can :manage, :all # Admins can manage all resources
       else
-        can :destroy, Post, author_id: user.id # Users can delete their own posts
-        can :destroy, Comment, user_id: user.id # Users can delete their own comments
+        can :read, [Post, Comment] # Usuarios pueden leer posts y comentarios de otros
+        can :manage, Post, author_id: user.id # Usuarios pueden administrar (editar, eliminar) sus propios posts
+        can :manage, Comment, user_id: user.id # Usuarios pueden administrar sus propios comentarios
       end
     end
   end
