@@ -24,8 +24,8 @@
           <p class="post-text"><%= link_to post.text, user_posts_path(@user), class: "links"%></p>
           <div class="stats">
             <div class="delete-container">
-              <% if can?(:destroy, @post) %>
-                <%= link_to "Delete Post", @post, method: :delete, data: { confirm: "Delete post?" }, class: "delete-button" %>
+              <% if can?(:destroy, post) %>
+                <%= button_to "Delete Post", user_post_path(@user, post), method: :delete, data: { confirm: "Delete post?" }, class: "delete-button" %>
               <% end %>
             </div>
             <div class="comments-counter">Comments: <%= post.commentscounter %></div>
