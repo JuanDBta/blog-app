@@ -32,7 +32,7 @@ class CommentsController < ApplicationController
       flash[:error] = 'Unable to delete comment...'
     end
 
-    redirect_to post_path(@post)
+    redirect_to user_post_path(@user, @post)
   end
 
   private

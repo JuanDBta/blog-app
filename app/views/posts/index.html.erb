@@ -41,8 +41,8 @@
                   <li class="comment-info">
                     <p class="comment-text"><strong><%= comment.user.name %>:</strong> <%= comment.text %></p>
                     <div class="delete-container comment">
-              <% if can?(:destroy, post) %>
-                <%= button_to "Delete Comment", user_post_path(@user, post), method: :delete, data: { confirm: "Delete comment?" }, class: "delete-button comment" %>
+              <% if can?(:destroy, comment) %>
+                <%= button_to "Delete Comment", user_post_comment_path(@user, post, comment), method: :delete, data: { confirm: "Delete comment?" }, class: "delete-button comment" %>
               <% end %>
             </div>
                   </li>
