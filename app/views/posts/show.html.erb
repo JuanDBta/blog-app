@@ -17,7 +17,7 @@
     <ul class="posts-list">
       <% @post.comments.each do |comment| %>
         <li class="comment-info">
-          <p class="comment-text"><strong><%= comment.user.name %>:</strong> <%= comment.text %></p>
+          <p class="comment-text"><strong><%= comment.user.name %>:</strong> <%= comment.text %></p>          
         </li>
       <% end %>
   <% else %>

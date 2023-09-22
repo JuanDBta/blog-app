@@ -25,27 +25,16 @@
           <div class="stats">
             <div class="comments-counter">Comments: <%= post.commentscounter %></div>
             <div class="likes-counter">Likes: <%= post.likescounter %></div>
+            <div class="delete-container">
+              <% if can?(:destroy, post) %>
+                <%= button_to "Delete Post", user_post_path(@user, post), method: :delete, data: { confirm: "Delete post?" }, class: "delete-button" %>
+              <% end %>
+            </div>
           </div>
         </li>
       <% end %>
     </ul>
   </div>
-
-  <div class="posts-container-all">
-    <ul>
-      <% @user.posts.each do |post| %>
-        <li class="post-info">
-          <h4 class="post-id">Post #<%= post.id %></h4>
-          <p class="post-text"><%= link_to post.text, user_posts_path(@user), class: "links"%></p>
-          <div class="stats">
-            <div class="comments-counter">Comments: <%= post.commentscounter %></div>
-            <div class="likes-counter">Likes: <%= post.likescounter %></div>
-          </div>
-        </li>
-      <% end %>
-    </ul>
-  </div>
-
 
   <div class="all-posts-button">
   <%= link_to 'See All Posts', user_posts_path(@user), id: 'posts-button' %>

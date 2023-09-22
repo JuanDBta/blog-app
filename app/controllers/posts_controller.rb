@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  load_and_authorize_resource
   layout 'application'
   before_action :set_user
   def index
@@ -32,6 +33,21 @@ class PostsController < ApplicationController
         end
       end
     end
+  end
+
+  def destroy
+    @post = Post.find(params[:id])
+    authorize! :destroy, @post
+    @post.comments.destroy_all
+    @post.likes.destroy_all
+
+    if @post.destroy
+      flash[:success] = 'Post deleted !!!'
+    else
+      flash[:error] = 'Unable to delete post...'
+    end
+
+    redirect_to user_posts_path(current_user)
   end
 
   private

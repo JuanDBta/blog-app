@@ -2,7 +2,7 @@
 
 <div align="center">
  
-  <h1><b>Blog App</b></h1>
+  <h1><b>Blog app: add authorization rules</b></h1>
  
   <img src="blog-app.png" alt="logo" width="300"  height="auto">
   <br/>
@@ -28,9 +28,9 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 [BLOG APP] <a name="about-project"></a>
+# 📖 [Blog app: add authorization rules] <a name="about-project"></a>
 
-**[BLOG APP]**  The Blog app is a classic example of a blog website. I created a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
+**[Blog app: add authorization rules]** In this project, my coding partner and I add authorization to our app using CanCanCan.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -83,6 +83,8 @@
 - **[Forms]**
 - **[Integration specs for Views and fixing n+1 problems]**
 - **[Add Devise]**
+- **[Add authorization rules]**
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -156,7 +158,6 @@ To run tests:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add authorization rules]**
 - [ ] **[Add API endpoints]**
 - [ ] **[API documentation]**
 
