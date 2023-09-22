@@ -17,7 +17,7 @@ body {
     background-color: rgb(165 139 165);
     margin: 0;
 }
-
+ 
 header {
     color: rgb(233 213 81);
     text-align: center;
@@ -410,4 +410,12 @@ padding: 20px;
 img {
   width: 220px;
   height: 220px;
+}
+
+.register {
+  margin-bottom: 50px;
+}
+
+.signup {
+  font-size: 25px;
 }
