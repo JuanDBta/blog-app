@@ -427,20 +427,21 @@ img {
 .delete-container {
   width: 100px;
   height: 20px;
-  background-color: white;
+  margin-bottom: 10px;
 }
 
-.delete.button {
+.delete-button {
 	background-color: rgb(233 213 81);
     color: rgb(243 236 236);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 12px;
     border: 0;
   box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
   border-radius: 5px;
   cursor: pointer; 
   text-decoration: none;
-  padding: 20px;
+  padding: 10px;
+  margin-bottom: 100px;
 }
 
