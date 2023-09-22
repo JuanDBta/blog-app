@@ -301,10 +301,6 @@ ul {
     text-decoration: none;
   }
 
-  .hidden {
-    display: none;
-  }
-
   .new-post {
     text-align: right;
     margin-right: 260px;
