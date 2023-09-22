@@ -12,7 +12,7 @@
   <div class="new-post-title">
     <%= f.label :password, class: 'label signup' %>
     <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <em class="label signup">(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
     <%= f.password_field :password, class: 'title-input', autocomplete: "new-password" %>
   </div>
