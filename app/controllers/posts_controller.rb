@@ -37,7 +37,9 @@ class PostsController < ApplicationController
 
   def destroy
     @post = Post.find(params[:id])
-    #authorize! :destroy, @post
+    authorize! :destroy, @post
+    @post.comments.destroy_all
+    @post.likes.destroy_all
   
     if @post.destroy
       flash[:success] = "Post deleted !!!"
