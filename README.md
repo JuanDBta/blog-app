@@ -81,6 +81,8 @@
 - **[Controllers specs]**
 - **[Views]**
 - **[Forms]**
+- **[Integration specs for Views and fixing n+1 problems]**
+- **[Add Devise]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -120,6 +122,7 @@ Go to your /blog-app folder:
 
 ```sh
   cd blog-app
+  bundle install
   rails server
 ```
 To run Rails console:
@@ -153,8 +156,6 @@ To run tests:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Integration specs for Views and fixing n+1 problems]**
-- [ ] **[Add Devise]**
 - [ ] **[Add authorization rules]**
 - [ ] **[Add API endpoints]**
 - [ ] **[API documentation]**
