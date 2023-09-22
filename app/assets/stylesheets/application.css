@@ -439,3 +439,14 @@ img {
   margin-top: -50px;
 }
 
+.delete-container {
+  width: 100px;
+  height: 20px;
+  background-color: white;
+}
+
+.delete.button {
+  color: black;
+  font-size: 20px;
+}
+
