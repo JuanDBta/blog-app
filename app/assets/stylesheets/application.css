@@ -419,3 +419,23 @@ img {
 .signup {
   font-size: 25px;
 }
+
+.login {
+  width: 500px;
+}
+
+.input-height {
+  height: 50px;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.signin {
+  margin-top: -50px;
+}
+
