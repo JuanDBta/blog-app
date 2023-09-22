@@ -83,6 +83,8 @@
 - **[Forms]**
 - **[Integration specs for Views and fixing n+1 problems]**
 - **[Add Devise]**
+- **[Add authorization rules]**
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -156,7 +158,6 @@ To run tests:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add authorization rules]**
 - [ ] **[Add API endpoints]**
 - [ ] **[API documentation]**
 
