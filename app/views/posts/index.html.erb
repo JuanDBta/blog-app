@@ -26,10 +26,10 @@
                 <div class="comments-counter">Comments: <%= post.commentscounter %></div>
                 <div class="likes-counter">Likes: <%= post.likescounter %></div>
                 <div class="delete-container">
-              <% if can?(:destroy, post) %>
-                <%= button_to "Delete Post", user_post_path(@user, post), method: :delete, data: { confirm: "Delete post?" }, class: "delete-button" %>
-              <% end %>
-            </div>
+                 <% if can?(:destroy, post) %>
+                  <%= button_to "Delete Post", user_post_path(@user, post), method: :delete, data: { confirm: "Delete post?" }, class: "delete-button" %>
+                <% end %>
+              </div>
               </div>
             </div>
           <% end %>

@@ -40,16 +40,15 @@ class PostsController < ApplicationController
     authorize! :destroy, @post
     @post.comments.destroy_all
     @post.likes.destroy_all
-  
+
     if @post.destroy
-      flash[:success] = "Post deleted !!!"
+      flash[:success] = 'Post deleted !!!'
     else
-      flash[:error] = "Unable to delete post..."
+      flash[:error] = 'Unable to delete post...'
     end
-  
+
     redirect_to user_posts_path(current_user)
   end
-  
 
   private
 

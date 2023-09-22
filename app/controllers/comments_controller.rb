@@ -27,9 +27,9 @@ class CommentsController < ApplicationController
     authorize! :destroy, @comment
 
     if @comment.destroy
-      flash[:success] = "Comment deleted !!!"
+      flash[:success] = 'Comment deleted !!!'
     else
-      flash[:error] = "Unable to delete comment..."
+      flash[:error] = 'Unable to delete comment...'
     end
 
     redirect_to post_path(@post)
