@@ -20,6 +20,21 @@ class CommentsController < ApplicationController
     end
   end
 
+  def destroy
+    @comment = Comment.find(params[:id])
+    @post = @comment.post
+
+    authorize! :destroy, @comment
+
+    if @comment.destroy
+      flash[:success] = "Comment deleted !!!"
+    else
+      flash[:error] = "Unable to delete comment..."
+    end
+
+    redirect_to post_path(@post)
+  end
+
   private
 
   def comment_params

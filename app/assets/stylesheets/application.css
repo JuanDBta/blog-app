@@ -445,3 +445,17 @@ img {
   margin-bottom: 100px;
 }
 
+.comment {
+  font-size: 12px;
+  font-weight: 600;
+  width: 150px;  
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+.comment-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
