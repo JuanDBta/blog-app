@@ -2,7 +2,7 @@
 
 <div align="center">
  
-  <h1><b>Blog app: add authorization rules</b></h1>
+  <h1><b>Blog app: add API endpoints</b></h1>
  
   <img src="blog-app.png" alt="logo" width="300"  height="auto">
   <br/>
@@ -28,9 +28,9 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 [Blog app: add authorization rules] <a name="about-project"></a>
+# 📖 [Blog app: add API endpoints] <a name="about-project"></a>
 
-**[Blog app: add authorization rules]** In this project, my coding partner and I add authorization to our app using CanCanCan.
+**[Blog app: add API endpoints]** In this project, my coding partner and I, add some API endpoints to our Blog app. This allow our app to be used in different ways, rather than just through our site .
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -84,6 +84,8 @@
 - **[Integration specs for Views and fixing n+1 problems]**
 - **[Add Devise]**
 - **[Add authorization rules]**
+- **[Add API endpoints]**
+- **[API documentation]**
 
 
 
@@ -158,8 +160,8 @@ To run tests:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add API endpoints]**
-- [ ] **[API documentation]**
+- [ ] **[Add great styling]**
+- [ ] **[Add animations]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

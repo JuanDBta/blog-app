@@ -11,6 +11,8 @@ gem 'devise'
 
 gem 'rubocop', '>= 1.0', '< 2.0'
 
+gem 'active_model_serializers', '~> 0.10.13'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.7', '>= 7.0.7.2'
 
