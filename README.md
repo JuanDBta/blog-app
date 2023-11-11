@@ -2,7 +2,7 @@
 
 <div align="center">
  
-  <h1><b>Blog app: add API endpoints</b></h1>
+  <h1><b>Blog App</b></h1>
  
   <img src="blog-app.png" alt="logo" width="300"  height="auto">
   <br/>
@@ -16,10 +16,12 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+- [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -28,9 +30,9 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 [Blog app: add API endpoints] <a name="about-project"></a>
+# 📖 [Blog App] <a name="about-project"></a>
 
-**[Blog app: add API endpoints]** In this project, my coding partner and I, add some API endpoints to our Blog app. This allow our app to be used in different ways, rather than just through our site .
+**[Blog App]** The Blog app is a classic example of a blog website. I created a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -87,9 +89,14 @@
 - **[Add API endpoints]**
 - **[API documentation]**
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Blog App](https://blog-app-po5m.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -145,6 +152,10 @@ To run tests:
   bundle install
   rspec spec
 ```
+### Deployment
+
+You can deploy this project using:<br>
+- [Blog App](https://blog-app-po5m.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
