@@ -93,7 +93,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Blog App](https://blog-app-po5m.onrender.com/)
+Check our app live: [Blog App](https://blog-app-po5m.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -111,7 +111,7 @@ Web Browser (Chrome recommended)<br>
 Code editor (VS recommended)<br>
 GitHub account<br>
 
-> You need the following tools be installed in your computer:
+> You need the following tools installed in your computer:
 
 > - [WSL](https://gorails.com/setup/windows/11#linux-subsystem)
 > - [Git](https://www.linode.com/docs/guides/how-to-install-git-on-linux-mac-and-windows/)
