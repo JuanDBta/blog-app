@@ -6,31 +6,31 @@ body {
 header {
     color: rgb(233 213 81);
     text-align: center;
-    margin-top: 50px;
+    margin-top: 2vw;
     font-weight: 800;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 50px;
+    font-size: 2vw;
 }
 
 h1 {
-    height: 50px;
+    height: 2.5vw;
 }
 
 .user-page {
     display: flex;
     flex-direction: column;
     align-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 1vw;
 }
 
 h2 {
-    margin-top: 20px;
-    height: 40px;
+    margin-top: 1vw;
+    height: 1.5vw;
     text-align: center;
     color: rgb(233 213 81);
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 50px;
+    font-size: 1.8vw;
 }
 
 .users-list {
@@ -42,18 +42,18 @@ h2 {
     display: flex;
     flex-direction: row;
     align-content: space-between;
-    margin: 20px;
-    margin-left: 220px;
+    margin: 1vw;
+    margin-left: 11vw;
 }
 
 .image {
-    width: 220px;
-    height: 220px;
+    width: 11vw;
+    height: 11vw;
     border: 3px silver solid;
     box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
     border-radius: 5px;
-    margin-top: 2.5px;
-    margin-left: 10px;
+    margin-top: 1vw;
+    margin-left: 1vw;
     background-color: rgb(116 84 116);
 }
 
@@ -307,49 +307,48 @@ ul {
   }
 
 .form-title {
-    margin-top: 20px;
-    height: 80px;
+    margin-top: 2vw;
+    height: 50vw;
     text-align: center;
     color: rgb(233 213 81);
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 50px;
 }
 
 .title-input {
-  width: 400px;
-  height: 50px;
-  margin-bottom: 40px;
-  font-size: 20px;
-  padding-left: 10px;
+  height: 2vw;
+  font-size: 1.2vw;
+  padding-left: 0.5vw;
   border-radius: 5px;
+  margin-bottom: 0.5vw;
 }
 
 .text-input {
-  width: 800px;
-  height: 50px;
+  width: 30vw;
+  height: 2vw;
   font-size: 20px;
   padding-left: 10px;
   border-radius: 5px;
 }
 
 .label {
-  margin-top: 20px;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
 }
 
 .submit-button {
-  width: 300px;
-  height: 80px;
+  width: 12vw;
+  height: 4vw;
   background-color: rgb(233 213 81);
   color: rgb(243 236 236);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
-  font-size: 35px;
+  font-size: 2vw;
   border: 0;
 box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
 border-radius: 5px;
 cursor: pointer;  
-margin-top: 50px;
+margin-top: 3vw;
 }
 
 .new-post-title {
@@ -398,30 +397,30 @@ img {
 }
 
 .register {
-  margin-bottom: 50px;
+  margin-bottom: 2vw;
 }
 
 .signup {
-  font-size: 25px;
+  font-size: 1.5vw;
 }
 
 .login {
-  width: 500px;
+  width: 25vw;
 }
 
 .input-height {
-  height: 50px;
-  margin-top: 40px;
-  margin-bottom: 70px;
+  height: 2vw;
+  margin-top: 3vw;
+  margin-bottom: 4vw;
 }
 
 .checkbox {
-  width: 20px;
-  height: 20px;
+  width: 1vw;
+  height: 1vw;
 }
 
 .signin {
-  margin-top: -50px;
+  margin-top: -5vw;
 }
 
 .delete-container {
