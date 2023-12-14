@@ -43,12 +43,12 @@ h2 {
     flex-direction: row;
     align-content: space-between;
     margin: 1vw;
-    margin-left: 11vw;
+    margin-left: 17vw;
 }
 
 .image {
-    width: 11vw;
-    height: 11vw;
+    width: 5.5vw;
+    height: 5.5vw;
     border: 3px silver solid;
     box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
     border-radius: 5px;
@@ -58,23 +58,23 @@ h2 {
 }
 
 .name {
-    width: 1290px;
-    height: 200px;
+    width: 55vw;
+    height: 5vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border: 3px silver solid;
     box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
     border-radius: 5px;
-    margin-top: 15px;
-    margin-left: 15px;
+    margin-top: 1.4vw;
+    margin-left: 2vw;
     background-color: rgb(116 84 116);
 }
 
 .username {
-    width: 600px;
-    height: 200px;
-    font-size: 70px;
+    width: 30vw;
+    height: 5vw;
+    font-size: 3vw;
     margin: 0;
     display: flex;
     align-items: center;
@@ -85,14 +85,14 @@ h2 {
 }
 
 .posts-counter {
-    width: 600px;
-    height: 200px;
+    width: 20vw;
+    height: 5vw;
     margin: 0;
-    font-size: 50px;
+    font-size: 1.5vw;
     display: flex;
     align-items: flex-end;
     justify-content: end;
-    margin-right: 20px;
+    margin-right: 1vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
     color: rgb(233 213 81);
@@ -392,8 +392,8 @@ padding: 20px;
 }
 
 img {
-  width: 220px;
-  height: 220px;
+  width: 5.5vw;
+  height: 5.5vw;
 }
 
 .register {
