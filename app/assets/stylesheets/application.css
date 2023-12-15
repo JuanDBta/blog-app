@@ -212,6 +212,7 @@ ul {
     background-color: rgb(116 84 116);
     margin-left: 16vw;
     padding-left: 1vw;
+    margin-bottom: 1vw;
   }
   
   .available {
@@ -228,8 +229,8 @@ ul {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 200;
     color: rgb(233 213 81);
-    font-size: 15px;
-    margin-left: 5px;
+    font-size: 0.75vw;
+    margin-left: 0.5vw;
   }
 
   .pagination {
@@ -239,13 +240,13 @@ ul {
   }
   
   #pagination-button {
-      width: 400px;
-      height: 80px;
+      width: 15vw;
+      height: 4vw;
       background-color: rgb(233 213 81);
       color: rgb(243 236 236);
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-weight: 600;
-      font-size: 35px;
+      font-size: 1.5vw;
       border: 0;
     box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
     border-radius: 5px;
@@ -448,11 +449,11 @@ img {
 }
 
 .comment {
-  font-size: 12px;
+  font-size: 0.6vw;
   font-weight: 600;
-  width: 150px;  
-  margin-right: 20px;
-  margin-bottom: 15px;
+  width: 7vw;  
+  margin-right: 1vw;
+  margin-bottom: 0.4vw;
 }
 
 .comment-info {
