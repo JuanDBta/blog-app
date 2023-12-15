@@ -19,7 +19,7 @@ h1 {
 .user-page {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
     margin-bottom: 1vw;
 }
 
@@ -43,7 +43,6 @@ h2 {
     flex-direction: row;
     align-content: space-between;
     margin: 1vw;
-    margin-left: 17vw;
 }
 
 .image {
@@ -99,7 +98,7 @@ h2 {
 }
 
 .bio {
-  width: 1510px;
+  width: 62vw;
   height: auto;
   border: 3px silver solid;
   box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
@@ -108,18 +107,17 @@ h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 200;
   color: rgb(233 213 81);
-  font-size: 20px;
-  text-align: left;
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-left: 230px;
+  font-size: 2vw;
+  padding-left: 1vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  margin-left: 1vw;
 }
 
 .posts-container {
-    width: 1510px;
+    width: 95vw;
     height: auto;
-    margin-bottom: 50px;
+    margin-bottom: 1vw;
 }
 
 ul {
@@ -128,73 +126,77 @@ ul {
   list-style: none;
   display: flex;
   flex-direction: column;
+  gap: 2vw;
 }
 
 .post-info {
-  width: 1530px;
-  height: 220px;
+  width: 63vw;
+  height: 8vw;
   border: 3px silver solid;
   box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
   border-radius: 5px;   
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 2vw;
   background-color: rgb(116 84 116);
-  margin-left: 230px;
+  margin-left: 16vw;
 }
 
 .post-id {
-  margin-left: 20px;
+  margin-left: 0.5vw;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 800;
   color: rgb(233 213 81);
-  font-size: 30px;
-  height: 10px;
-  margin-top: 5px;
+  font-size: 2vw;
+  height: 0.5vw;
+  margin-top: 0.3vw;
 }
 
 .post-text {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 200;
     color: rgb(233 213 81);
-    font-size: 25px;
-    margin-left: 20px;
+    font-size: 1.5vw;
+    margin-left: 0.5vw;
+    height: 2.5vw;
+    margin-bottom: 5vw;
+    
 }
 
 .stats {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin-left: 1100px;
-    padding-bottom: 20px;
+    justify-content: flex-end;
+    margin-left: 34vw;
+    margin-top: -2.5vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
     color: rgb(233 213 81);
-    font-size: 20px;
-    gap: 30px;
+    font-size: 1vw;
+    gap: 1vw;
+    align-items: baseline;
+    width: 30vw;
 }
 
 .all-posts-button {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 7vw;
   text-align: center;
+  margin-bottom: 10vw;
 }
 
 #posts-button {
-    width: 400px;
-    height: 80px;
     background-color: rgb(233 213 81);
     color: rgb(243 236 236);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
-    font-size: 35px;
+    font-size: 1.5vw;
     border: 0;
   box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
-  padding: 20px;
+  padding: 1vw;
 }
 
 .comment-info {
@@ -424,9 +426,9 @@ img {
 }
 
 .delete-container {
-  width: 100px;
-  height: 20px;
-  margin-bottom: 10px;
+  width: 7vw;
+  height: 1.4vw;
+  margin-bottom: 2vw;
 }
 
 .delete-button {
@@ -434,14 +436,13 @@ img {
     color: rgb(243 236 236);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 0.8vw;
     border: 0;
   box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
   border-radius: 5px;
   cursor: pointer; 
   text-decoration: none;
-  padding: 10px;
-  margin-bottom: 100px;
+  padding: 0.5vw;
 }
 
 .comment {
