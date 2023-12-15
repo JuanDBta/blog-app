@@ -131,7 +131,7 @@ ul {
 
 .post-info {
   width: 63vw;
-  height: 8vw;
+  height: 11vw;
   border: 3px silver solid;
   box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
   border-radius: 5px;   
@@ -460,9 +460,23 @@ img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-left: -16vw;
+}
+
+.comments-container-thepost {
+  margin-left: 0;
 }
 
 .comments-container {
   margin-left: 16vw;
+}
+
+.post-text-thepost {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 200;
+  color: rgb(233 213 81);
+  font-size: 1.5vw;
+  margin-left: 1.5vw;
+  height: 2.5vw;
+  margin-bottom: 5vw;
+  
 }
