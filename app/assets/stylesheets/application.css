@@ -126,7 +126,7 @@ ul {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 2vw;
+  gap: 0;
 }
 
 .post-info {
@@ -200,7 +200,7 @@ ul {
 }
 
 .comment-info {
-    width: 1510px;
+    width: 62vw;
     height: auto;
     border: 3px silver solid;
     box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
@@ -208,20 +208,20 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 3vw;
     background-color: rgb(116 84 116);
-    margin-left: 230px;
-    padding-left: 20px;
+    margin-left: 16vw;
+    padding-left: 1vw;
   }
   
   .available {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
     color: rgb(233 213 81);
-    font-size: 20px; 
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
+    font-size: 1vw; 
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 1vw;
   }
 
   .comment-text {
@@ -290,8 +290,9 @@ ul {
 
   .new-post {
     text-align: right;
-    margin-right: 260px;
-    margin-top: 5px;
+    margin-right: -54vw;
+    margin-top: 1vw;
+    margin-bottom: 0.5vw;
   }
 
   .new-post-button {
@@ -299,13 +300,13 @@ ul {
     color: rgb(243 236 236);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 1vw;
     border: 0;
   box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
   border-radius: 5px;
   cursor: pointer; 
   text-decoration: none;
-  padding: 20px;
+  padding: 1vw;
   }
 
 .form-title {
@@ -354,14 +355,14 @@ margin-top: 3vw;
 }
 
 .new-post-title {
-  margin-top: 20px;
+  margin-top: 1vw;
 }
 
 .comments-likes {
   text-align: right;
-  margin-left: 100px;
-  width: 1665px;
-  margin-top: 30px;
+  margin-left: 59.5vw;
+  width: 20vw;
+  margin-top: -0.7vw;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -373,24 +374,25 @@ margin-top: 3vw;
   color: rgb(243 236 236);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 0.7vw;
   border: 0;
 box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
 border-radius: 5px;
 cursor: pointer; 
 text-decoration: none;
-padding: 20px;
+padding: 0.5vw;
 }
 
 .like-button {
-  width: 70px;
-  height: 70px;
-  font-size: 70px;
-  margin-top: -25px;
+  width: 0;
+  height: 2vw;
+  font-size: 2vw;
+  margin-top: -0.5vw;
   border: 0;
   background-color: rgb(165 139 165);
-  margin-right: 40px;
+  margin-right: 3vw;
   cursor: pointer;
+  padding: 0;
 }
 
 img {
