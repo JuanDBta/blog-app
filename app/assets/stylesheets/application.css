@@ -210,7 +210,6 @@ ul {
     justify-content: space-between;
     margin-top: 3vw;
     background-color: rgb(116 84 116);
-    margin-left: 16vw;
     padding-left: 1vw;
     margin-bottom: 1vw;
   }
@@ -254,16 +253,15 @@ ul {
   }
   
   .thepost-container {
-    width: 1530px;
+    width: 62.8vw;
     height: auto;
     border: 3px silver solid;
     box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
     border-radius: 5px;   
-    margin-top: 30px;
+    margin-top: 1.5vw;
     background-color: rgb(116 84 116);
-    margin-left: 230px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 1vw;
+    padding-bottom: 1vw;
   }
 
   .thepost {
