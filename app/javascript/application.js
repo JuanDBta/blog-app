@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
       comment.style.display = "none";
     });
     commentsVisible = false;
+    location.reload();
   }
 
   function showComments() {
@@ -16,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
       comment.style.display = "block";
     });
     commentsVisible = true;
+    location.reload();
   }
 
   function toggleCommentsVisibility() {
