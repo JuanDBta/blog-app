@@ -8,8 +8,16 @@ class User < ApplicationRecord
   has_many :likes, foreign_key: 'user_id'
   validates :name, presence: true
   validates :posts_counter, numericality: { greater_than_or_equal_to: 0, only_integer: true }
+  before_validation :set_default_photo
+  
 
   def recent_posts
     posts.order(created_at: :desc).limit(3)
+  end
+
+  private
+
+  def set_default_photo
+    self.photo ||= '/profile_picture.jpg'
   end
 end
