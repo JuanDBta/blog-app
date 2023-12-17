@@ -6,7 +6,7 @@ body {
 header {
     color: rgb(233 213 81);
     text-align: center;
-    margin-top: 2vw;
+    margin-top: 1vw;
     font-weight: 800;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2vw;
@@ -24,7 +24,7 @@ h1 {
 }
 
 h2 {
-    margin-top: 1vw;
+    margin-top: 2vw;
     height: 1.5vw;
     text-align: center;
     color: rgb(233 213 81);
