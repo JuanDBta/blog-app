@@ -2,7 +2,7 @@ body {
     background-color: rgb(165 139 165);
     margin: 0;
 }
- 
+
 header {
     color: rgb(233 213 81);
     text-align: center;
@@ -310,7 +310,7 @@ ul {
 
 .form-title {
     margin-top: 2vw;
-    height: 50vw;
+    height: 5vw;
     text-align: center;
     color: rgb(233 213 81);
     font-weight: bold;
@@ -336,6 +336,7 @@ ul {
 .label {
   margin-top: 1vw;
   margin-bottom: 1vw;
+  color: rgb(233 213 81);
 }
 
 .submit-button {
@@ -351,6 +352,10 @@ box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
 border-radius: 5px;
 cursor: pointer;  
 margin-top: 3vw;
+}
+
+.add {
+  font-size: 1.3vw;
 }
 
 .new-post-title {
@@ -477,6 +482,18 @@ img {
   font-size: 1.5vw;
   margin-left: 1.5vw;
   height: 2.5vw;
-  margin-bottom: 5vw;
-  
+  margin-bottom: 5vw; 
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5vw;
+  cursor: pointer;
+}
+
+.notice {
+  color: #fff;
+  text-align: center;
 }
