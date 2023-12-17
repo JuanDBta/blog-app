@@ -141,6 +141,7 @@ ul {
   margin-top: 2vw;
   background-color: rgb(116 84 116);
   margin-left: 16vw;
+  align-items: flex-start;
 }
 
 .post-id {
@@ -480,7 +481,7 @@ img {
   font-weight: 200;
   color: rgb(233 213 81);
   font-size: 1.5vw;
-  margin-left: 1.5vw;
+  margin-left: -54.5vw;
   height: 2.5vw;
   margin-bottom: 5vw; 
 }
