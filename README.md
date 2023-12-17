@@ -93,7 +93,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Check our app live: [Blog App](https://blog-app-po5m.onrender.com/)
+Check our app live: [Blog App](https://blog-app-ix14.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -155,7 +155,7 @@ To run tests:
 ### Deployment
 
 You can deploy this project using:<br>
-- [Blog App](https://blog-app-po5m.onrender.com/)
+- [Blog App](https://blog-app-ix14.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
